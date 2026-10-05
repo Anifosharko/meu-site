@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steel Cuts Barbearia</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#090909;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:#090909ee;border-bottom:1px solid #333;padding:16px 6%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:900;letter-spacing:1px}.logo span{color:#f5bd32}
+nav .links{display:flex;gap:24px;font-size:14px}
+.btn{display:inline-block;background:#f5bd32;color:#111;padding:13px 22px;border-radius:30px;font-weight:800}
+.hero{min-height:78vh;display:flex;align-items:center;padding:70px 7%;background:linear-gradient(90deg,#000 15%,#000b 45%,#0004),url('hero-demo.png') center/cover}
+.hero div{max-width:620px}.tag{color:#f5bd32;font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:14px 0}.hero h1 span{color:#f5bd32}.hero p{color:#ddd;font-size:18px;margin-bottom:28px}
+section{padding:70px 7%}.section-title{font-size:38px;margin-bottom:10px}.sub{color:#aaa;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:#151515;border:1px solid #292929;border-radius:16px;padding:24px}.card h3{margin:10px 0}.price{color:#f5bd32;font-size:24px;font-weight:900}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about-box{background:#151515;border-radius:18px;padding:32px}
+.contact{background:#111;border-top:1px solid #292929}
+footer{padding:25px 7%;text-align:center;color:#888;border-top:1px solid #292929}
+@media(max-width:700px){nav .links{display:none}.hero{min-height:70vh;padding:55px 7%}.about{grid-template-columns:1fr}.hero h1{font-size:48px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">✂ <span>STEEL CUTS</span> BARBEARIA</div>
+  <div class="links">
+    <a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#sobre">Sobre</a><a href="#contactos">Contactos</a>
+  </div>
+  <a class="btn" href="https://wa.me/258841234567?text=Olá%20Steel%20Cuts!%20Quero%20agendar%20um%20corte." target="_blank">WhatsApp</a>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="tag">STEEL CUTS BARBEARIA</div>
+    <h1>O teu estilo,<br><span>a nossa missão.</span></h1>
+    <p>Mais do que um corte, uma experiência. Cuidamos do teu visual com profissionalismo, conforto e estilo.</p>
+    <a class="btn" href="https://wa.me/258841234567?text=Olá!%20Quero%20agendar%20um%20corte." target="_blank">Agendar agora</a>
+  </div>
+</header>
+
+<section id="servicos">
+  <div class="tag">OS NOSSOS SERVIÇOS</div><h2 class="section-title">Qualidade em cada detalhe</h2>
+  <p class="sub">Escolhe o teu estilo e vem sentir a diferença.</p>
+  <div class="grid">
+    <div class="card"><h3>✂ Corte Masculino</h3><p>Corte moderno e personalizado ao teu estilo.</p><div class="price">200 MT</div></div>
+    <div class="card"><h3>🧔 Barba</h3><p>Modelação e acabamento perfeito da barba.</p><div class="price">150 MT</div></div>
+    <div class="card"><h3>👦 Corte Infantil</h3><p>Com todo o cuidado e paciência.</p><div class="price">150 MT</div></div>
+    <div class="card"><h3>🔥 Corte + Barba</h3><p>O combo perfeito para o teu visual.</p><div class="price">300 MT</div></div>
+    <div class="card"><h3>⭐ Desenhos no Cabelo</h3><p>Dá um toque único ao teu estilo.</p><div class="price">100 MT+</div></div>
+  </div>
+</section>
+
+<section id="galeria">
+  <div class="tag">GALERIA</div><h2 class="section-title">O nosso trabalho</h2>
+  <p class="sub">Confia no nosso trabalho e vê alguns dos estilos que podemos criar.</p>
+  <div class="grid gallery">
+    <img src="hero-demo.png" alt="Exemplo de corte">
+    <img src="hero-demo.png" alt="Exemplo de barbearia">
+    <img src="hero-demo.png" alt="Exemplo de estilo">
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="about">
+    <div class="about-box"><div class="tag">SOBRE NÓS</div><h2 class="section-title">Steel Cuts Barbearia</h2><p>Somos uma barbearia moderna, criada para homens que valorizam o seu visual. Uma equipa experiente, apaixonada pelo que faz, num ambiente confortável e acolhedor.</p></div>
+    <div class="card"><h3>✓ Profissionais experientes</h3><p>Atendimento cuidadoso e acabamento de qualidade.</p><br><h3>✓ Atendimento rápido</h3><p>Marca o teu horário e evita esperas.</p><br><h3>✓ Ambiente confortável</h3><p>Um espaço feito para relaxar.</p></div>
+  </div>
+</section>
+
+<section id="contactos" class="contact">
+  <div class="tag">CONTACTOS</div><h2 class="section-title">Marca o teu corte</h2>
+  <p class="sub">📍 Av. das FPLM, N° 1234 — Maputo, Moçambique<br>🕒 Segunda a Sábado, 8:00–20:00<br>📱 +258 84 123 4567</p>
+  <a class="btn" href="https://wa.me/258841234567?text=Olá!%20Quero%20marcar%20um%20corte." target="_blank">Falar no WhatsApp</a>
+</section>
+
+<footer>© 2026 Steel Cuts Barbearia · Corte é confiança.</footer>
+</body>
+</html>
